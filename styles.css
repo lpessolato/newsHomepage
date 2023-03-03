@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    font-family: inter;
+    font-family: Inter;
 }
 
 header{
@@ -38,3 +38,138 @@ li{
     padding: 40px 20px;
 }
 
+h1{
+    padding: 0px 20px;
+    font-size: 3rem;
+    line-height: 50px;
+}
+
+.subtitle{
+    padding: 0px 20px;
+    line-height: 30px;
+    color: darkgray;
+    margin: 40px 0px;
+}
+
+.button{
+    text-decoration: none;
+    padding: 10px 40px;
+    background-color: red;
+    color: white;
+    margin: 0px 20px;
+    font-size: 0.75rem;
+}
+
+article{
+    margin: 40px 20px;
+    background-color: hsl(240, 100%, 5%);
+    padding: 10px 20px;
+}
+
+article h2{
+    color: hsl(35, 77%, 62%);
+    margin: 10px 0px;
+    font-size: 2rem;
+}
+
+.blackCards{
+    margin: 30px 0px;
+}
+
+.blackCards h3{
+    color: white;
+    margin: 0px;
+}
+
+.blackCards p{
+    color: darkgray;
+    font-size: 1.1rem;
+    margin: 20px 0px;
+}
+
+.blackCards::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: darkgray;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    margin: 80px 20px;
+}
+
+.lastCards{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.lastCards img{
+    width: 80%;
+    height: 200px;
+}
+
+.info{
+    margin-left: 20px;
+}
+
+.info .number{
+    font-weight: bold;
+    color: darkgray;
+    font-size: 2rem;
+    margin: 0px;
+}
+
+.info h4{
+    font-size: 1.1rem;
+    margin: 10px 0px;
+}
+
+.info p{
+    color: darkgray;
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+@media (min-width: 768px){
+    .menu{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .itens{
+        display: flex;
+    }
+
+    .itens>ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    li{
+        text-decoration: none;
+        color: darkgrey;
+    }
+    li:hover{
+        cursor: pointer;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .imagemPrincipal{
+        grid-column: 1/4;
+    }
+
+    .bottom{
+        grid-row: 2;
+    }
+}
