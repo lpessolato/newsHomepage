@@ -163,13 +163,33 @@ article h2{
     main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid:
+            "imagemPrincipal imagemPrincipal article"
+            "titulo titulo botao"
+            "bottom bottom bottom";
+        margin: 0px 20px;
     }
 
     .imagemPrincipal{
-        grid-column: 1/4;
+        grid-area: imagemPrincipal;
+    }
+  
+    article{
+        grid-area: article;
+    }
+
+    h1{
+        grid-area: titulo;
+    }
+
+    .grid{
+        grid-area: botao;
     }
 
     .bottom{
-        grid-row: 2;
+        grid-area: bottom;
+        flex-direction: row;
     }
+
+
 }
