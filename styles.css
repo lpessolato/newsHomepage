@@ -160,6 +160,17 @@ article h2{
         cursor: pointer;
     }
 
+    
+    .blackCards h3:hover{
+        cursor: pointer;
+        color: orange;
+        transition: 1.75ms;
+    }
+
+    .lastCards:hover{
+        cursor: pointer;
+    }
+
     main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
